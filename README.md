@@ -1,1 +1,1 @@
-# homepage
+This is a repository for the source code of my website.
