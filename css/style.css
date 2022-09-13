@@ -36,16 +36,16 @@ span{
 
 #main-header{
     background-color: #333333;
-    color: #ffffff;
+    color: var(--text-lighter);
 }
 
 #navbar{
     background-color: #34252F;
-    color: #ffffff; 
-    text-align: right; 
+    color: var(--text-lighter);
+    text-align: left; 
     width: 100%;
     margin: auto;
-    padding-right: 150px;
+    padding-left: 75px;
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;

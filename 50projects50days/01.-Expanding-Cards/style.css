@@ -1,10 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
-* {
+:root{
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+  }
+  
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+nav {
+    display: block;
+}
+
+#navbar{
+    background-color: #34252F;
+    color: var(--text-lighter);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; left: 0; top: 0;
+    text-align: left; 
+    width: 100%;
+    margin: auto;
+    padding-left: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#main-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    width: 100%;
+    background-color: #34252F;
+    color: var(--text-light);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+body{
     font-family: "Muli", sans-serif;
     background-color: #BEC5AD;
     display: flex;
@@ -13,6 +75,8 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    font-size: 16px;
+    line-height: 1.6em; 
 }
 
 .container{
