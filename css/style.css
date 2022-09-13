@@ -5,6 +5,7 @@
     --spacing-m: 16px;
     --spacing-l: 24px;
     --spacing-xl: 32px;
+    --spacing-ml: 48px;
     --spacing-xxl: 64px;
     --width-container: 1200px;
   }
@@ -75,8 +76,8 @@ span{
 #showcase{
     background-image: url('');
     background-position: center right;
-    min-height: 100px;
-    margin-bottom: 30px;
+    min-height: 90px;
+    margin-bottom: 0p;
     text-align: center;
 }
 
@@ -84,7 +85,7 @@ span{
     color: var(--text-lighter);
     font-size: 50px;
     line-height: 1.6em;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 #main{
@@ -120,7 +121,7 @@ align-items: flex-start;
 display: flex;
 min-height: 100%;
 justify-content: center;
-padding: var(--spacing-xxl) var(--spacing-l);
+padding: var(--spacing-ml) var(--spacing-l);
 }
   
 .card-grid{
@@ -160,10 +161,10 @@ width: 100%;
     background-size: cover;
     background-position: center;
     border-radius: 0.8rem;
+    position: absolute;
     bottom: 0;
     filter: brightness(0.4) saturate(0.5) contrast(0.9);
     left: 0;
-    position: absolute;
     right: 0;
     top: 0;
     transform-origin: center;
@@ -205,7 +206,6 @@ color: var(--text-lighter);
 font-size: 1.5rem;
 text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
 line-height: 1.4;
-word-spacing: 100vw;
 }
 
 .card__body{
@@ -213,5 +213,6 @@ word-spacing: 100vw;
     color: var(--text-light);
     font-size: 1rem;
     line-height: 1.4;
+    padding-bottom: 0.5rem;
 }
     
