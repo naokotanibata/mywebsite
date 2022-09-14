@@ -4,24 +4,36 @@
     --text-light: rgba(255,255,255,0.6);
     --text-lighter: rgba(255,255,255,0.9);
     --theme-green: #BEC5AD;
-  }
+    --theme-brown: #34252F;
+    --theme-pink: #ff7979;
+    --theme-creme: #efedd6;
+    --theme-highlight: #519872;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+}
   
 *{
+    border: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* #main-footer{
+#main-footer{
     position: fixed;
     width: 100%;
     bottom: 0px;
-    width: 100%;
-    background-color: #34252F;
-    color: var(--text-light);
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--theme-brown);
+    color: var(--text-light);
     text-align: center;
     padding: 10px;
     margin-top: 0px;
-} */
+}
 
 body{
     font-family: 'Lato', sans-serif;
@@ -29,6 +41,8 @@ body{
     color: #222222;
     overflow-x: hidden;
     margin: 0;
+    font-size: 16px;
+    line-height: 1.6em;    
 }
 
 .container{
@@ -44,6 +58,8 @@ body{
     position: fixed;
     top: -100px;
     left: -100px;
+    z-index: 10;
+    transition: transform 0.5s linear;
 }
 
 .container.show-nav{
@@ -58,9 +74,9 @@ body{
     transition: transform 0.5s linear;
 }
 
-.container.show-nav .circle{
-    transform: rotate(-70deg);
-  }
+.circle-container.show-nav {
+    transform: rotate(-90deg);
+}
 
 .circle button{
     cursor: pointer;
