@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+:root{
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --theme-green: #BEC5AD;
+    --theme-brown: #34252F;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+  }
+  
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--theme-green);
+    background-image: linear-gradient(900deg, #fdc7c7, #c06c6c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.search{
+    position: relative;
+    height: 50px;
+}
+
+.search input{
+    background-color: #ffffff;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease
+}
+
+.btn{
+    background-color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus, 
+.input:focus{
+    outline: none;
+}
+
+.search.active .input{
+    width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(198px);
+}
+
+nav {
+    display: block;
+}
+
+#navbar{
+    background-color: var(--theme-brown);
+    color: var(--text-lighter);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; left: 0; top: 0;
+    text-align: left; 
+    width: 100%;
+    margin: auto;
+    padding-left: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: var(--text-lighter);
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#main-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    width: 100%;
+    background-color: var(--theme-brown);
+    color: var(--text-light);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
+
