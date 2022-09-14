@@ -53,7 +53,7 @@ h1{
     margin: 5px;
     border-radius: 10px;
     box-shadow: 2px 4px rgba(0, 0, 0, 0.3);
-    transform: translateX(50%);
+    transform: translateX(400%);
     transition: transform 0.4s ease;
 }
 
@@ -84,6 +84,7 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
+    z-index: 10;
 }
 
 #navbar ul{
