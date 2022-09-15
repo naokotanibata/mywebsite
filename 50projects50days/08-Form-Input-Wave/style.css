@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+:root{
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --theme-green: #BEC5AD;
+    --theme-brown: #34252F;
+    --theme-pink: #ff7979;
+    --theme-creme: #efedd6;
+    --theme-highlight: #519872;
+}
+  
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Muli", sans-serif;
+    color: var(--text-lighter);
+    background-color: var(--theme-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    line-height: 1.6em; 
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px 40px;
+    border-radius: 5px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: rgb(91, 248, 144);
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background:rgb(91, 248, 144);
+    padding: 15px;
+    font-family: inherit;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px var(--text-lighter) solid;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: rgb(91, 248, 144);
+}
+
+.form-control label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, 0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: rgb(91, 248, 144);
+    transform: translateY(-30px);
+}
+
+#navbar{
+    display: block;
+    background-color: var(--theme-brown);
+    color: var(--text-lighter);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; left: 0; top: 0;
+    text-align: left; 
+    width: 100%;
+    margin: auto;
+    padding-left: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: var(--text-lighter);
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#main-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: var(--theme-brown);
+    color: var(--text-light);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
