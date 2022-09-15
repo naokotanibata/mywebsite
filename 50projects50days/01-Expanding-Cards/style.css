@@ -88,7 +88,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 70vh;
     border-radius: 50px;
     color: #ffffff;
     cursor: pointer;
@@ -98,7 +98,7 @@ body{
     /* This does not solve the weird behavior of h3 text.
     transition: flex 0.7s ease-in;
     */
-    -webkit-transition: all .7s ease-in;
+    -webkit-transition: 0.7s ease-in;
     /* Add box shadow to make h3 text more readable */
     box-shadow: #000000 0px -80px 100px inset;
 }
