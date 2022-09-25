@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+:root{
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --theme-green: #BEC5AD;
+    --theme-brown: #34252F;
+    --theme-pink: #ff7979;
+    --theme-creme: #efedd6;
+    --theme-highlight: #519872;
+}
+  
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--theme-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    line-height: 1.6em;
+    padding: 20px;
+}
+
+.container{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px, 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 100%;
+    width: 800px;
+}
+
+h3{
+    margin: 0;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+
+.joke{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.btn{
+    background-color: var(--theme-pink);
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px, 6px rgba(0, 0, 0, 0.1);
+    padding: 14px 40px;
+    font-size: 16px;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: 0;
+}
+nav {
+    display: block;
+}
+
+#navbar{
+    background-color: var(--theme-brown);
+    color: var(--text-lighter);
+    font-family: 'Montserrat', sans-serif;
+    position: absolute; left: 0; top: 0;
+    text-align: left; 
+    width: 100%;
+    margin: auto;
+    padding-left: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: var(--text-lighter);
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#main-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    background-color: var(--theme-brown);
+    color: var(--text-light);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
